@@ -1,6 +1,6 @@
 package hu.fenyvesvolgyimate.tollsystem.init;
 
-import hu.fenyvesvolgyimate.tollsystem.VehicleRegisterClient;
+import hu.fenyvesvolgyimate.tollsystem.client.VehicleRegisterClient;
 import hu.fenyvesvolgyimate.tollsystem.VignetteLister;
 import hu.fenyvesvolgyimate.tollsystem.VignetteListerAPI;
 import hu.fenyvesvolgyimate.tollsystem.controller.TollSystemController;
