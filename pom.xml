@@ -36,13 +36,13 @@
         <dependency>
             <groupId>hu.fenyvesvolgyimate.vehicleregisterapp</groupId>
             <artifactId>VehicleRegisterBusinessRules</artifactId>
-            <version>2.0</version>
+            <version>2.1</version>
         </dependency>
 
         <dependency>
             <groupId>hu.fenyvesvolgyimate.vehicleregisterapp</groupId>
             <artifactId>VehicleRegisterStorage</artifactId>
-            <version>2.0</version>
+            <version>2.1</version>
         </dependency>
         <dependency>
             <groupId>hu.fenyvesvolgyimate.tollsystem</groupId>
