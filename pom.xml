@@ -44,6 +44,11 @@
             <artifactId>VehicleRegisterStorage</artifactId>
             <version>2.0</version>
         </dependency>
+        <dependency>
+            <groupId>hu.fenyvesvolgyimate.tollsystem</groupId>
+            <artifactId>VehicleRegisterPlugin</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 </project>
