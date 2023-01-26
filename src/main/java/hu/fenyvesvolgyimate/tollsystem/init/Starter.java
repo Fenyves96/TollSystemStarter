@@ -4,6 +4,7 @@ import hu.fenyvesvolgyimate.tollsystem.client.VehicleRegisterClientImpl;
 import hu.fenyvesvolgyimate.tollsystem.VignetteLister;
 import hu.fenyvesvolgyimate.tollsystem.VignetteListerAPI;
 import hu.fenyvesvolgyimate.tollsystem.controller.TollSystemController;
+import hu.fenyvesvolgyimate.tollsystem.dao.EmergencyVignetteStorage;
 import hu.fenyvesvolgyimate.tollsystem.dao.SqlLiteVignetteStorage;
 import hu.fenyvesvolgyimate.tollsystem.dao.VignetteStorage;
 import hu.fenyvesvolgyimate.tollsystem.presenter.VignettePresenterImpl;
@@ -22,7 +23,7 @@ public class Starter {
         VehicleReader vehicleReader = new VehicleRegister(vehicleRepository, vehicleApiCaller);
 
         vehicleApiCaller.setVehicleReader(vehicleReader);
-        VignetteStorage vignetteStorage = new SqlLiteVignetteStorage();
+        VignetteStorage vignetteStorage = new EmergencyVignetteStorage();
         VignettePresenterImpl vignettePresenter = new VignettePresenterImpl();
         VignetteListerAPI vignetteListerAPI = new VignetteLister(vignetteStorage, vehicleApiCaller, vignettePresenter);
         TollSystemController tollSystemController = new TollSystemController(vignetteListerAPI);
